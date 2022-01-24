@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>community</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="page">
+            <!-- Barre de navigation-->
+            <nav>
+                <div class="onglets">
+                    <a href="index.html">Home</a>
+                    <a href="metaverse.html">Metaverse News</a>
+                    <a href="community.html">community</a>
+                    <a href="AboutUs.html">About us</a>
+                </div>   
+                <div class="buttons">
+                    <button class="login">I already have an account</button>
+                    <button class="register">Want to register</button>
+                </div>
+            </nav>
+
+            <!-- Fin de la barre de navigation -->  
+            <h1 class="chatmeta">Metaverse Chat</h1>
+                <div class="container">
+                    <!-- chat box -->
+                    <div class="chat-box">
+                        <!-- client -->
+                        <div class="client">
+                            <img src="https://www.imaginated.com/wp-content/uploads/2021/12/what-is-metaverse.png" alt="logo" />
+                            <div class="client-info">
+                                <h2>Metaverse Chat</h2>
+                                <p>online</p>
+                            </div>
+                        </div>
+            
+                        <!-- main chat section -->
+                        <div class="chats">
+                            <div class="client-chat">Hi!</div>
+                            <div class="my-chat">Hi!</div>
+                            <div class="client-chat">Do you Know about metaverse?</div>
+                            <div class="my-chat">yes, I love how it works!</div>
+                            <div class="client-chat">explain me more about metaverse...</div>
+                        </div>
+            
+                        <!-- input field section -->
+                        <div class="chat-input">
+                            <input type="text" placeholder="Enter Message" />
+                            <button class="send-btn">
+                                <img src="https://github.com/deepeshrohilla/chat-box-ui/blob/main/send.png?raw=true" alt="send-btn">
+                            </button>
+                        </div>
+                    </div>
+            
+                    <!-- button -->
+                    <div class="chat-btn">
+                        <img src="https://github.com/deepeshrohilla/chat-box-ui/blob/main/Circle-icons-chat.svg.png?raw=true" alt="chat box icon btn">
+                    </div>
+                </div>
+            
+                <script src="jquery-3.4.1.min.js"></script>
+                <script src="script.js"></script>      
+
+                  <!-- Pied de page-->
+        <footer>
+            <h5>Some question? Send me email: <strong>tvmouns@gmail.com</strong></h5>
+            <div class="colonnes">
+                <div class="colonne">
+                    <p>About us</p>
+                    <p>Investor relationship</p>
+                    <p>Customer relationship</p>
+                    <p>About metaverse</p>
+                </div>
+                <div class="colonne">
+                    <p>legal notice</p>
+                    <p>reading mode</p>
+                    <p>------------</p>
+                    <p>------------</p>
+                </div>
+                <div class="colonne">
+                    <p>------------</p>
+                    <p>------------</p>
+                    <p>------------</p>
+                    <p>------------</p>
+                </div>
+                <div class="colonne">
+                    <p>------------</p>
+                    <p>------------</p>
+                    <p>------------</p>
+                    <p>------------</p>
+                </div>
+            </div>
+            <p> Mounsif Ed-Daoudi, Canada</p>
+        </footer>
+        <!-- Fin du Pied de page-->
+
+                <!--Style-->
+                <style>
+                @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    border: none;
+}
+
+
+.container {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* chat box section */
+
+.chat-box {
+    width: 400px;
+    height: 450px;
+    background-color: rgb(77, 77, 77);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+/* about client */
+
+.client {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(156, 156, 156);
+    padding: 15px;
+}
+
+.client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.client-info {
+    color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+.client-info p {
+    color: #43d456;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+
+/* chat section */
+
+.chats {
+    width: 100%;
+    padding: 0 15px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 0.9em;
+}
+
+.client-chat {
+    width: 60%;
+    word-wrap: break-word;
+    background-color: #f54266;
+    padding: 7px 10px;
+    border-radius: 10px 10px 10px 0;
+    margin: 10px 0;
+}
+
+.my-chat {
+    width: 60%;
+    word-wrap: break-word;
+    background-color: #808080c7;
+    padding: 7px 10px;
+    border-radius: 10px 10px 0 10px;
+    margin: 5px 0 5px auto;
+}
+
+
+/* input section */
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(156, 156, 156);
+    padding: 15px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-input input {
+    width: calc(100% - 40px);
+    height: 100%;
+    background-color: #4f5d7321;
+    border-radius: 50px;
+    color: #000;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+
+.send-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.send-btn:active {
+    transform: scale(0.85);
+}
+
+.send-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* chat box button section */
+
+.chat-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    bottom: 20px;
+}
+
+.chat-btn img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+.chat-btn:hover img {
+    transform: rotate(30deg);
+}
+</style>
+<!--Fin style-->
+    </body>
+        
+         </section>
+</html>
